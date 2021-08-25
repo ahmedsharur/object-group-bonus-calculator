@@ -91,7 +91,7 @@ function processEmployeeBonus(employeeInput){
   else if (employeeInput.bonusPercentage > 0.13){
     employeeInput.bonusPercentage = 0.13;
   }
-
+  employeeInput.totalBonus = employeeInput.annualSalary * employeeInput.bonusPercentage;
 
   return employeeInput
 
